@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="icon" href="img/favcon.png">
+                <title>EYE|PHARMA - Gerador de Assinaturas</title>
+
+                <!-- Bootstrap -->
+                <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+                <!-- Bootstrap -->
+                
+                <!--CSS Ocorrências--> 
+                <link href="css/estilo.css" rel="stylesheet">
+                <!--CSS Ocorrências-->
+                
+                <!--IE Bug-->           
+                <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+                <!--IE Bug-->
+
+             
+    </head>
+
+    <body>
+
+         <div class="container-fluid">
+               
+                <form  enctype="multipart/form-data" class="form-signin" method="POST" action="assinatura.php" target="_blank" >
+ 
+                    <div> 
+                      <img src="img/logo.jpg" class="img-responsive img_form">  
+                    </div> 
+ 
+                     <h3>Gerador de Assinatura de E-mail</h3>
+
+                      <div class="form-group">
+                          <label>* <i>Nome completo</i></label>
+                            <input required="" type="text" id="nome" class="form-control"  name="nome" placeholder="Exp: Maria de Lurdes Aparecida" autofocus>
+                      </div>
+                     
+					  <div class="form-group">
+                            <label>* <i>Setor</i></label>
+	                    <input required="" id="setor" type="text" class="form-control" name="setor" placeholder="Exp: Recursos Humanos">
+                      </div>
+                    
+                      <div class="form-group">
+                          <label>* <i>Telefone da filial em que trabalha</i></label>
+                        <input type="tel" required="" pattern="^\d{4}-\d{4}$" title="Insira o número seguindo exemplo xxxx-xxxx" class="form-control validacao_campo" 
+                          id="telefone" placeholder="Exp: xxxx-xxxx" name="telefone">
+                     </div>
+                     
+                     <div align="center" class="div-botoes">
+                            <input  value="Gerar Assinatura" name="enviar" type="submit" class="btn btn-primary">
+							<a href="index.html" class="btn btn-info">Limpar</a>
+                     </div>
+
+                     <hr>
+
+                     <h5>© progFer Soluções</h5>
+  
+                </form>
+
+
+
+          </div>    
+
+   </body>
+
+</html>
+          
